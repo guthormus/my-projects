@@ -1,0 +1,73 @@
+import sys
+from time import sleep
+
+def print_lyrics():
+    lyrics_with_timestamps = [
+        ("It might seem crazy what I'm 'bout to say", 0.04),
+        ("Sunshine she's here, you can take a break", 0.04),
+        ("I'm a hot air balloon that could go to space", 0.04),
+        ("With the air, like I don't care, baby, by the way", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like a room without a roof", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like happiness is the truth", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you know what happiness is to you", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like that's what you wanna do", 0.04),
+        ("Here come bad news talking this and that", 0.04),
+        ("Well, give me all you got, and don't hold back", 0.04),
+        ("Well, I should probably warn you I'll be just fine", 0.04),
+        ("No offense to you, don't waste your time, here's why", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like a room without a roof", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like happiness is the truth", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you know what happiness is to you", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like that's what you wanna do", 0.04),
+        ("Bring me down, can't nothin'", 0.04),
+        ("Bring me down, my level's too high", 0.04),
+        ("Bring me down, can't nothin'", 0.04),
+        ("Bring me down, I said", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like a room without a roof", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like happiness is the truth", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you know what happiness is to you", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like that's what you wanna do", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like a room without a roof", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like happiness is the truth", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you know what happiness is to you", 0.04),
+        ("Because I'm happy", 0.04),
+        ("Clap along if you feel like that's what you wanna do", 0.04),
+        ("Hey, come on, uh", 0.04),
+        ("Bring me down, can't nothin'", 0.04),
+        ("Bring me down, my level's too high", 0.04),
+        ("Bring me down, can't nothin'", 0.04),
+        ("Bring me down, I said", 0.04)
+    ]
+    
+    delays = [
+        2.25, 2.25, 2.25, 2.25, 0.75, 2.25, 0.75, 2.25, 
+        0.75, 2.25, 0.75, 2.25, 2.25, 2.25, 2.25, 2.25, 
+        0.75, 2.25, 0.75, 2.25, 0.75, 2.25, 0.75, 2.25, 
+        2.25, 2.25, 2.25, 2.25, 0.75, 2.25, 0.75, 2.25, 
+        0.75, 2.25, 0.75, 2.25, 0.75, 2.25, 0.75, 2.25, 
+        0.75, 2.25, 2.25, 2.25, 2.25, 2.25
+    ]
+
+    for i, (line, chardelay) in enumerate(lyrics_with_timestamps):
+        for char in line:
+            print(char, end='', flush=True)
+            sleep(chardelay)
+        print()
+        sleep(delays[i])
+
+print_lyrics()
